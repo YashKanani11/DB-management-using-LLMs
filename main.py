@@ -1,8 +1,8 @@
 from langchain_google_genai import GoogleGenerativeAI
-from langchain.utilities import SQLDatabase
+from langchain_community.utilities import SQLDatabase
 import pymysql
 from langchain_experimental.sql import SQLDatabaseChain
-from langchain.embeddings import HuggingFaceBgeEmbeddings
+from langchain_community.embeddings import HuggingFaceBgeEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain.prompts import SemanticSimilarityExampleSelector
 from langchain.chains.sql_database.prompt import PROMPT_SUFFIX, _mysql_prompt
