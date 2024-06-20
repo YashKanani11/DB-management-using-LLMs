@@ -9,4 +9,3 @@ streamlit
 mysql-connector-python
 sentence-transformers
 chromadb
-pip install --use-pep517
