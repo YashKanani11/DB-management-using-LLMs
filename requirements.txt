@@ -4,7 +4,6 @@ pymysql
 langchain_experimental
 langchain_community
 python-dotenv
-os
 streamlit
 mysql-connector-python
 sentence-transformers
