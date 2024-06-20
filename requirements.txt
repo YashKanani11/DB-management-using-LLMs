@@ -1,0 +1,5 @@
+langchain_google_genai
+langchain
+pymysql
+langchain_experimental
+langchain_community
