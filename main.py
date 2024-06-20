@@ -48,9 +48,3 @@ def get_few_short_db_chain():
     new_db_chain=SQLDatabaseChain.from_llm(llm, db,verbose=True,prompt=few_srt_prmt)
 
     return new_db_chain
-
-print(os.environ["GOOGLE_PALM_API_KEY"])
-question="If we have to sell all the Levi’s T-shirts today. How much revenue our store will generate without discount?"
-chain=get_few_short_db_chain()
-ans=chain.run(question)
-print(ans)
