@@ -15,7 +15,7 @@ load_dotenv()
 import os
 
 def get_few_short_db_chain():
-    llm=GoogleGenerativeAI(model="models/text-bison-001",google_api_key=os.environ["GOOGLE_PALM_API_KEY"], temperature=0.2)
+    llm=GoogleGenerativeAI(model="models/text-bison-001",google_api_key=os.getenv["GOOGLE_PALM_API_KEY"], temperature=0.2)
 
     db_user="root"
     db_password="YK2002.yk"
