@@ -15,11 +15,12 @@ load_dotenv()
 import os
 
 def get_few_short_db_chain():
-    llm=GoogleGenerativeAI(model="models/text-bison-001",google_api_key=os.environ["GOOGLE_PALM_API_KEY"], temperature=0.2)
+    
+    llm=GoogleGenerativeAI(model="models/text-bison-001",google_api_key=os.getenv('GOOGLE_PALM_API_KEY'), temperature=0.2)
 
-    db_user="root"
-    db_password="YK2002.yk"
-    db_host="localhost"
+    db_user="admin"
+    db_password=os.getenv('AWS_RDS_PASSWORD')
+    db_host=os.getenv('AWS_RDS_ENDPOINT')
     db_name="atliq_tshirts"
 
     db=SQLDatabase.from_uri(f"mysql+pymysql://{db_user}:{db_password}@{db_host}/{db_name}",sample_rows_in_table_info=3)
