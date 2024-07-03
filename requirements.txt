@@ -8,3 +8,4 @@ streamlit
 mysql-connector-python
 sentence-transformers
 chromadb
+pysqlite3-binary>=0.4.6
