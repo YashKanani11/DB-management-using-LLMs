@@ -9,3 +9,6 @@ if question:
     ans=chain.run(question)
     st.header("Answer")
     st.write(ans)
+
+st.text_area("This is a representation of Levi's store, you can ask question abt sizes and price and any other complex query")
+st.text_area("If you get any error please mail your query to 'ykkanani.yk@outlook.com' ")
